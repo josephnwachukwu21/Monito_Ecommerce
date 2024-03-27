@@ -127,9 +127,16 @@ nav #hright button {
   position: relative;
   z-index: 2;
 }
+
 #heroleft h1 {
   font-size: 4rem;
   font-weight: 800;
+  color: #002a48;
+}
+
+#heroleft h2 {
+  font-size: 3rem;
+  font-weight: 600;
   color: #002a48;
 }
 
@@ -142,12 +149,6 @@ nav #hright button {
   font-weight: 500;
   line-height: 2rem;
   color: #242b33;
-}
-
-#heroleft h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #002a48;
 }
 .rect8 {
   position: absolute;
@@ -276,7 +277,7 @@ nav #hright button {
   font-weight: 700;
 }
 .petcard img {
-  width: 20rem;
+  width: 100%;
   /* border: 0.5rem solid white; */
   /* border-radius: 2rem; */
 }
@@ -559,5 +560,261 @@ footer p {
   font-weight: 500;
   font-size: 1.4rem;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 430px) {
+  body {
+    width: 100%;
+  }
+  nav #hlinks,
+  #hright input,
+  #hright button,
+  #hright .dropdown {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  #container {
+    width: 100%;
+    height: 100vh;
+  }
+  #headercontent {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100px; */
+  }
+  #heroright {
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #heroright img {
+    /* width: 100%; */
+  }
+
+  #heroleft {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  #heroleft h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #002a48;
+    padding-left: 1rem;
+  }
+
+  #heroleft h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #002a48;
+    padding-left: 1rem;
+  }
+
+  #heroleft p {
+    text-align: start;
+    padding-left: 1rem;
+  }
+  .Rectangle3 {
+    display: none;
+  }
+  #btn {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  #btn img {
+    width: 100%;
+  }
+  .dog {
+    width: 50%;
+    margin-left: -5rem;
+  }
+
+  #petcontainer {
+    width: 100%;
+  }
+  #petslide {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #product-container {
+    display: none;
+  }
+  #sellers {
+    display: none;
+  }
+
+  #container2 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  .bannerrect {
+    display: block;
+  }
+
+  #bannerleft {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerrect {
+    position: absolute;
+    left: -15rem;
+    /* left: -0.1rem; */
+    /* bottom: -0.1rem; */
+    z-index: -1;
+    width: 100%;
+  }
+  #bannerright {
+    /* overflow: hidden; */
+    position: relative;
+    /* padding: 1rem; */
+    width: 100%;
+    /* max-width: 0; */
+    flex-direction: column;
+    padding-right: 0;
+    /* gap: 45rem; */
+    /* z-index: 1; */
+    /* background:#FCEED5; */
+  }
+  .banner-text-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+  .query {
+    display: block;
+    margin-top: -35em;
+    width: 100%;
+  }
+  #bannerright p {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+  }
+  .rects1 {
+    position: absolute;
+    left: -10rem;
+    bottom: -18rem;
+    z-index: -1;
+  }
+
+  #container3 {
+    display: none;
+  }
+  #headercontent {
+    width: 100%;
+  }
+
+  #bannerright {
+    /* width: 100%; */
+  }
+  .before-fotter {
+    width: 100%;
+  }
+  .Before-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #bottomcontainer {
+    width: 100%;
+  }
+  .whatsnewlink {
+    display: none;
+  }
+  #whatsnew .top {
+    width: 100%;
+  }
+
+  #bottomcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #register h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  #register #sign {
+    width: 100%;
+  }
+  #sign {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #sign button {
+    width: 100%;
+  }
+  #media img {
+    width: 100%;
+  }
+  #media {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #medialinks {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  #medialinks a {
+    font-size: 1rem;
+  }
+  .mediaimg {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .mediaimg img {
+    width: 0.5rem;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footerlink a {
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
 }
